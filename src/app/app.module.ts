@@ -9,12 +9,16 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from "@angular/material/icon";
 import {AddButtonComponent} from "./add-button/add-button.component";
+import { DataTableComponent } from './data-table/data-table.component';
+import {MatTableModule} from "@angular/material/table";
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
-    AddButtonComponent
+    AddButtonComponent,
+    DataTableComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +26,9 @@ import {AddButtonComponent} from "./add-button/add-button.component";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatTableModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
