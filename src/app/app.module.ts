@@ -12,13 +12,15 @@ import {AddButtonComponent} from "./add-button/add-button.component";
 import { DataTableComponent } from './data-table/data-table.component';
 import {MatTableModule} from "@angular/material/table";
 import {MatCheckboxModule} from "@angular/material/checkbox";
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     AddButtonComponent,
-    DataTableComponent
+    DataTableComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
