@@ -1,13 +1,21 @@
-import {FlatTreeControl} from '@angular/cdk/tree';
-import {Component} from '@angular/core';
-import {MatTreeFlatDataSource, MatTreeFlattener} from '@angular/material/tree';
-
+import {Component, OnInit} from '@angular/core';
+import {Project} from "../project";
+import {PROJECTS_DATA} from "../projects"
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css']
 })
-export class DashboardComponent {
+export class DashboardComponent implements OnInit {
 
+  projects: Project[];
+
+  ngOnInit() {
+    this.getProjects();
+  }
+
+  getProjects(): void {
+   this.projects = PROJECTS_DATA;
+  }
 }
