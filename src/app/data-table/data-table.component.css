@@ -16,3 +16,8 @@ th.mat-header-cell {
 .mat-header-cell {
   color: rgba(0, 0, 0, 0.87);
 }
+
+.strikeThrough {
+  text-decoration: line-through;
+}
+
