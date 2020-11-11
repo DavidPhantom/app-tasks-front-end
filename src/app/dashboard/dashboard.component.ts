@@ -1,5 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {Project} from "../project";
 import {PROJECTS_DATA} from "../projects"
 
 @Component({
@@ -9,13 +8,9 @@ import {PROJECTS_DATA} from "../projects"
 })
 export class DashboardComponent implements OnInit {
 
-  projects: Project[];
+  projects = PROJECTS_DATA;
 
   ngOnInit() {
-    this.getProjects();
-  }
 
-  getProjects(): void {
-   this.projects = PROJECTS_DATA;
   }
 }

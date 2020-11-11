@@ -19,5 +19,6 @@ th.mat-header-cell {
 
 .strikeThrough {
   text-decoration: line-through;
+  color: gray;
 }
 

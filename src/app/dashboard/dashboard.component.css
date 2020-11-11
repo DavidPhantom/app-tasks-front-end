@@ -1,3 +1,4 @@
 ul li{
-  display:inline-block;
+  display: inline-block;
+  vertical-align: text-top;
 }

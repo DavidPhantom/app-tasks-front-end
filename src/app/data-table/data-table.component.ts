@@ -15,18 +15,15 @@ export class DataTableComponent implements OnInit {
 
   constructor() {}
 
-  header: string;
-  displayedColumns: string[] = ['select', 'text'];
+  displayedColumns: string[] = ['checkList'];
   dataSource;
   selection = new SelectionModel<Todo>(true, []);
 
-  /** The label for the checkbox on the passed row */
-  checkboxLabel(row?: Todo): string {
-    return `${this.selection.isSelected(row) ? 'deselect' : 'select'}`;
+  changeValue(todo: Todo){
+   todo.isCompleted = !todo.isCompleted;
   }
 
   ngOnInit(){
-    this.header = this.project.title;
     this.dataSource = new MatTableDataSource<Todo>(this.project.todos);
   }
 
