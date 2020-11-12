@@ -1,0 +1,31 @@
+.example-container{
+  margin: 10% auto;
+  text-align: center;
+}
+
+.titleOfForm{
+  font-size: 70%;
+  font-weight: bold;
+}
+
+input.ng-touched.ng-invalid{
+  border-color: red;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex {
+  background-color: white;
+}
+
+.mat-raised-button {
+  margin: 1%;
+  min-width: 100px;
+  line-height: 40px
+}
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+  background-color: gray;
+}
+
+#name{
+  color: lightgray;
+}
+

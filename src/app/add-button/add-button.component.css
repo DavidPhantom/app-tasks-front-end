@@ -1,7 +1,0 @@
-.example-button-row button,
-.example-button-row a {
-  margin-right: 8px;
-}
-
-.mat-fab:not([class*=mat-elevation-z]), .mat-mini-fab:not([class*=mat-elevation-z]) {
-  box-shadow: none}

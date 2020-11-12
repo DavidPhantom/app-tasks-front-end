@@ -1,0 +1,27 @@
+<div class="example-container">
+  <form [formGroup]="myFirstReactiveForm" (submit)="onSubmit()">
+
+    <h1 class="titleOfForm">НОВАЯ ЗАДАЧА</h1>
+
+    <mat-form-field appearance="fill">
+      <mat-label for="name"></mat-label>
+      <input type="text" id="name" formControlName="name"matInput>
+      <div class="error" *ngIf="isControlInvalid('name')">
+        Название задачи не должно быть пустым
+      </div>
+    </mat-form-field>
+    <br>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Категория</mat-label>
+      <mat-select>
+        <mat-option *ngFor="let project of projects" value="project">{{project.title}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br>
+    <div class="example-button-row">
+      <button mat-raised-button color="accent">ОТМЕНА</button>
+      <button mat-raised-button color="primary" type="submit">OK</button>
+    </div>
+  </form>
+</div>
